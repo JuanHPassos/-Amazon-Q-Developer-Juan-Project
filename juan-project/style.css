@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 350px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.timer-display {
+    margin-bottom: 30px;
+}
+
+.time {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 10px;
+    font-family: 'Courier New', monospace;
+}
+
+.state {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background: #27ae60;
+    color: white;
+}
+
+.btn.primary:hover {
+    background: #229954;
+}
+
+.btn.secondary {
+    background: #95a5a6;
+    color: white;
+}
+
+.btn.secondary:hover {
+    background: #7f8c8d;
+}
+
+.settings {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.setting:last-child {
+    margin-bottom: 0;
+}
+
+.setting label {
+    font-weight: 500;
+    color: #333;
+}
+
+.setting input {
+    width: 60px;
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.stats {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.stat {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.work { color: #e74c3c; }
+.short-break { color: #f39c12; }
+.long-break { color: #3498db; }
+.stopped { color: #95a5a6; }
